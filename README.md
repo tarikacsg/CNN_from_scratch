@@ -12,6 +12,8 @@ The `flatten` class implements the flatten operation in a CNN. It converts the m
 
 #### Training on MNIST Dataset
 
+#### Convolution Layer --> Flatten Layer --> Tanh Activation --> Matrix Multiplication / Dense Layer --> Bias Addition --> Softmax Activation --> Cross Entropy Loss Layer
+
 This repository also includes an example of training a CNN on the MNIST dataset. The CNN architecture consists of two layers:
 
 1. Convolution Layer:
@@ -27,4 +29,3 @@ The CNN is trained using the softmax cross-entropy loss function, which optimize
 
 To train the CNN on the MNIST dataset, the `sgd_q6` function is provided. It performs the forward and backward passes for each training sample, updates the weights and biases, and calculates the loss values. After training, the overall loss is calculated to evaluate the model's performance.
 
-Please refer to the code in this repository for detailed implementations and usage examples. Feel free to explore and modify the code to suit your specific needs.
